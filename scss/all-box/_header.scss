@@ -1,0 +1,52 @@
+.header {
+    margin: 100px 100px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .header__list {
+        display: flex;
+    }
+
+    & .header__item+ .header__item {
+        margin-left: 33px;
+    }
+
+
+    .button {
+        display: none;
+        border: none;
+        background-color: #fff;
+    }
+    
+    .header__mobilni {
+        display: none;
+    }
+    
+    
+    
+    
+    
+      
+    
+    @media only screen and (max-width: 550px) {
+        .nav {
+            display: none;
+        }
+    
+        .nav__button {
+            display: block;
+        }
+    
+        .header__mobilni {
+            display: block;
+        }
+        
+        .header__logo {
+            display: none;
+        }
+    }
+}
